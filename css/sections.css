@@ -1,0 +1,65 @@
+section article:nth-child(even) {
+    background-color: rgb(214, 214, 214);
+}
+
+section article:nth-child(2) {
+    border-top: 2px solid grey;
+}
+
+section article {
+    overflow: auto;
+    padding: 50px;
+    border-bottom: 2px solid grey;
+}
+
+section article img {
+    height: 300px;
+    width: 300px;
+    padding-right: 50px;
+    float: left;
+}
+
+section article h3 {
+    color: forestgreen;
+}
+
+.checkmark {
+    color: green;
+}
+
+.crossmark {
+    color: red;
+}
+
+.warningsign {
+    color: orange;    
+}
+
+.checkmark, .crossmark, .warningsign {
+    font-weight: bold;
+    cursor: help;
+}
+
+@media screen and (max-width: 600px) {    
+    section article {
+        padding: 10px;
+    }
+    
+    section article img {
+        float: none;
+        display: block;
+        margin: auto;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+}
+
+body section {
+    padding: 0;
+}
+
+section h2 {
+    padding: 15px;
+    margin-top: 0;
+}
+

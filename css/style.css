@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+#up-arrow {
+    cursor: pointer;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 3px 10px 3px 10px;
+    background-color: white;
+    font-size: 3em;
+    border-radius: 5px;
+    color: grey;
+    z-index: 100;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+#up-arrow:visited {
+    color: grey;
+}
+
+body {
+    margin: auto;
+    width: 75%;
+    border: 5px solid black;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 1900px;
+}
+
+header {
+    background-color: rgba(214, 214, 214, 0.8);
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 224.400px;
+    height: 120.575px;
+}
+
+nav {
+    overflow: hidden;
+    background-color: forestgreen;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    width: 25%;
+}
+
+nav a:hover {
+    background-color: rgb(19, 104, 19);
+}
+
+section {
+    background-color: antiquewhite;
+    padding: 15px;
+}
+
+.fil {
+    background-color: antiquewhite;
+    padding: 15px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        width: 100%;
+        border: none;
+    }
+
+    #up-arrow {
+        opacity: 0.3;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: none;
+    } 
+
+    header {
+        background-color: rgb(214, 214, 214);
+    }
+
+    nav {
+        position: static;
+    }
+    
+    nav a {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .column {
+        width: 100%;
+    }
+}
+
+.cer-group-pictures {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(214, 214, 214);
+    text-align: center;
+    padding: 5px; 
+}
